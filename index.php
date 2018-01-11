@@ -12,6 +12,5 @@
 		>Medium.com</a>
 		</h2>
 		<img src="data-design" alt="elements, attributes and relation diagram"/>
-		<p>test</p>
 	</body>
 </html>
