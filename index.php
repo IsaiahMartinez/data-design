@@ -20,28 +20,33 @@
 			<li>
 				<strong>Technology:</strong> Inspiron 15 7000 with Dell wireless keyboard and mouse, KM636.
 			</li>
-				<ul>
-					<li>
-						<strong>Device:</strong> Dell Inspiron 15 7000 with Dell wireless keyboard and mouse. Windows 10.
-					</li>
-					<li>
-						<strong>Proficiency:</strong> Advanced; Helps government and private businesses prepare books and journals 								  articles manuscripts for publication.
-					</li>
-					<li>
-						<strong>Does he love or hate it?</strong> Mr. Horrox loves Microsoft products and uses them exclusively.
-					</li>
-				</ul>
+			<ul>
+				<li>
+					<strong>Device:</strong> Dell Inspiron 15 7000 with Dell wireless keyboard and mouse. Windows 10.
+				</li>
+				<li>
+					<strong>Proficiency:</strong> Advanced; Helps government and private businesses prepare books and
+					journals articles manuscripts for publication.
+				</li>
+				<li>
+					<strong>Does he love or hate it?</strong> Mr. Horrox loves Microsoft products and uses them exclusively.
+				</li>
+			</ul>
 			<li>
 				<strong>Attitudes and Needs:</strong>
 			</li>
-				<ul>
-					<li>
-						Mr. Horrox is currently a freelance editor. He has a Ph.D and previously taught in various Universities. As 						an editor, Horrox has worked in a variety of industries in 40+ countries. Mr. Horrox is also a researcher in 						the field of publications in humanities and social sciences. He needs a site where he can post his 						writings.
-					</li>
-					<li>
-						Mr. Horrox prefers sites that provide a seamless UX experience. This way he can concentrate on writing and 						posting his works rather than having to think about <strong>how</strong> to post them.
-					</li>
-				</ul>
+			<ul>
+				<li>
+					Mr. Horrox is currently a freelance editor. He has a Ph.D and previously taught in various Universities.
+					As an editor, Horrox has worked in a variety of industries in 40+ countries. Mr. Horrox is also a
+					researcher in the field of publications in humanities and social sciences. He needs a site where he can
+					post his writings.
+				</li>
+				<li>
+					Mr. Horrox prefers sites that provide a seamless UX experience. This way he can concentrate on writing
+					and posting his works rather than having to think about <strong>how</strong> to post them.
+				</li>
+			</ul>
 		</ul>
 		<h2>User Stories</h2>
 		<p>As a registered user, I want to post my writing online and obtain feedback.</p>
@@ -81,14 +86,27 @@
 		<ul>
 			<li>
 				profileId (Primary Key)
+			</li>
+			<li>
 				profileFirstName
+			</li>
+			<li>
 				profileLastName
+			</li>
+			<li>
 				profileEmail
+			</li>
+			<li>
 				profileHash
+			</li>
+			<li>
 				profileSalt
+			</li>
+			<li>
 				profileAboutMe
 			</li>
-		<h2>Blog (Entity)</h2>
+		</ul>
+		<p><strong>Blog (Entity)</strong></p>
 		<ul>
 			<li>
 				blogId (Primary Key)
@@ -105,7 +123,31 @@
 			<li>
 				blogDate
 			</li>
-			</ul>
+		</ul>
+		<p><strong>Clap (Entity)</strong></p>
+		<ul>
+			<li>
+				clapId (primary key)
+			</li>
+			<li>
+				clapProfileId (foreign key)
+			</li>
+			<li>
+				clapBlogId (foreign key)
+			</li>
+		</ul>
+		<p><strong>Relations</strong></p>
+		<ul>
+			<li>
+				One user can write many blogs - (1 to n)
+			</li>
+			<li>
+				Many users can clap for many blogs - (m to n)
+			</li>
+			<li>
+				Each blog can have many claps - (1 to n)
+			</li>
+		</ul>
 		</ul>
 
 	</body>
