@@ -144,9 +144,6 @@
 			<li>
 				Many users can clap for many blogs - (m to n)
 			</li>
-			<li>
-				Each blog can have many claps - (1 to n)
-			</li>
 		</ul>
 		</ul>
 
