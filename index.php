@@ -76,5 +76,37 @@
 				System logs user out of site.
 			</li>
 		</ol>
+		<h2>Entities and Attributes</h2>
+		<p><strong>Profile (Entity):</strong></p>
+		<ul>
+			<li>
+				profileId (Primary Key)
+				profileFirstName
+				profileLastName
+				profileEmail
+				profileHash
+				profileSalt
+				profileAboutMe
+			</li>
+		<h2>Blog (Entity)</h2>
+		<ul>
+			<li>
+				blogId (Primary Key)
+			</li>
+			<li>
+				blogTitle
+			</li>
+			<li>
+				blogContent
+			</li>
+			<li>
+				blogProfileId (Foreign Key)
+			</li>
+			<li>
+				blogDate
+			</li>
+			</ul>
+		</ul>
+
 	</body>
 </html>
