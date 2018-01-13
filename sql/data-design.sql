@@ -2,7 +2,8 @@ DROP TABLE IF EXISTS clap;
 DROP TABLE IF EXISTS blog;
 DROP TABLE IF EXISTS profile;
 
-ALTER DATABASE imartinez32_CHANGE_ME CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER DATABASE imartinez32 CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
 CREATE TABLE profile (
 profileId BINARY(16) NOT NULL,
 profileActivationToken CHAR (32),
