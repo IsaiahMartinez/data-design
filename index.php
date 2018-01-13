@@ -135,6 +135,9 @@
 			<li>
 				clapBlogId (foreign key)
 			</li>
+			<li>
+				clapDate
+			</li>
 		</ul>
 		<p><strong>Relations</strong></p>
 		<ul>
